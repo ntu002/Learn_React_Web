@@ -11,16 +11,16 @@
     justify-content: center;
 }
 
-.expense-date__month {
+.expense-date_month {
     font-size: 0.75rem;
     font-weight: bold;
 }
 
-.expense-date__year {
+.expense-date_year {
     font-size: 0.75rem;
 }
 
-.expense-date__day {
+.expense-date_day {
     font-size: 1.5rem;
     font-weight: bold;
 } 
