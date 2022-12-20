@@ -2,19 +2,23 @@ import React from "react";
 
 import "./ChartBar.css";
 
-const ChartBar = () => {
+const ChartBar = (props) => {
+  let barFillHeight = "0%";
 
-    let barFillHeight = '0%';
-    if (props.max > 0) {
-        barFillHeight = Math.round((props.value / props.maxValue) * 100) + '%';
-    }
+  if (props.maxValue > 0) {
+    barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
+    // cung cap ti le phan tram ma thanh nay duoc lap day
+  }
 
   return (
     <div className="chart-bar">
       <div className="chart-bar__inner">
-        <div className="char-bar__fill" style={{height : barFillHeight, backgroundColor : 'red' }}> </div>
+        <div 
+          className="chart-bar__fill" 
+          style={{ height: barFillHeight }}
+        ></div>
       </div>
-      <div className="char-bar__laber">{props.laber}</div>
+      <div className="chart-bar__label">{props.label}</div>
     </div>
   );
 };
