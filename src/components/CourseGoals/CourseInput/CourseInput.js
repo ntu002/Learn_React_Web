@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Button1 from "../../UI/Button/Button1";
+import Button from "../../UI/Button/Button";
 import "./CourseInput.css";
 
 const CourseInput = (props) => {
@@ -33,7 +33,7 @@ const CourseInput = (props) => {
           onChange={goalInputChangeHandler}
         />
       </div>
-      <Button1 type="submit">Add Goal</Button1>
+      <Button type="submit">Add Goal</Button>
     </form>
   );
 };
